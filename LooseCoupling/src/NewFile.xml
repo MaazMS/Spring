@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="Math" class="LooseCoupling.Math"></bean>
+	<bean id="Science" class="LooseCoupling.Science"></bean>
+	<bean id="History" class=" LooseCoupling.History"></bean>
+	
+	<bean id="stu" class="LooseCoupling.Student"> 
+	     <!-- cheat is an interface --> 
+		<property name="cheat" ref="History" /> 		
+	</bean>
+
+</beans> 
