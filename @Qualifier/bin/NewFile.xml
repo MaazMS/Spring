@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+  
+    <bean id="huamnheart"  class="part6.Heart"  > 
+    <property name="nameOfAnimal" value="Human" /> 
+    <property name="noOfHeart" value="1" /> 
+     </bean>
+    
+    
+    <bean id="octpousheart"  class="part6.Heart"  > 
+    <property name="nameOfAnimal" value="octpous" /> 
+    <property name="noOfHeart" value="3" /> 
+     </bean> 
+      
+    <bean id="human"  class="part6.Human"     > </bean> 
+ 
+     </beans>   
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+      <!--  This is without autowire -->
+       <!--               <property name="heart" ref="heart" />         </bean>  -->    
+       
+       
+       
+       
+       <!--  This is use with autowire the id name is same as the reference name of the class Hear -->
+        <!--  <bean id="heart"  class="part6.Heart"  > </bean>     --> 
+        <!--  <bean id="human"  class="part6.Human"  autowire="byName"   > </bean>     -->     
+        
+      
+       <!--  This is use with autowire by class path location which is part6.Heat the id name is different  -->  
+        <!--      <bean id="heartonject"  class="part6.Heart"  > </bean>   --> 
+        <!--  <bean id="human"  class="part6.Human"  autowire="byType"   > </bean>  -->
+        
+        
+        
+        
+        <!--  This is use with autowire by class  constructor and it only need parameterize constructor   -->  
+        <!--      <bean id="heartonject"  class="part6.Heart"  > </bean>   --> 
+        <!--  <bean id="human"  class="part6.Human"  autowire="constructor"   > </bean>  -->
