@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 // @component same you create objectfor me. 
 @Controller
 public class MomController { 
-	
-	@ResponseBody
+	/// all controller register in webApplicationContext
+	@ResponseBody // sugar
 	@RequestMapping("/sugar")
 	public String giveSuger() {
 		
-		return " ok . take this";
+		return "Mom";
 	}
 
 }

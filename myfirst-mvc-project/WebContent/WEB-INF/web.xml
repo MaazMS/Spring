@@ -15,6 +15,10 @@
     <display-name>dad-frontcontroller</display-name>
     <servlet-name>dad-frontcontroller</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+   <init-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/beans.xml</param-value>
+    </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
@@ -22,3 +26,4 @@
     <url-pattern>/home.com/*</url-pattern>
   </servlet-mapping>
 </web-app>
+<!-- this is error dad-frontcontroller name is not present -->
