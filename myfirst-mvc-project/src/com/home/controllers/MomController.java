@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MomController { 
 	/// all controller register in webApplicationContext
-//  @Responsebody	
-	@ResponseBody // sugar
+	
+	//@ResponseBody // sugar
 	@RequestMapping("/sugar")
 	public String giveSuger() {
 		
-		return "Mom";
+		return "NewFile";
 	}
 
 }

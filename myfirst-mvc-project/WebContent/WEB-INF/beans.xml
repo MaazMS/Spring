@@ -15,11 +15,11 @@
 <property name="suffix" value=".html" />
 </bean>
 --> 
-<!-- NewFile.html   NewFile.jsp   
+<!-- NewFile.html   NewFile.jsp -->   
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	<property name="prefix" value="/WEB-INF/test/"></property>
+	<property name="prefix" value="/WEB-INF/Resolver/"></property>
 	<property name="suffix" value=".jsp"></property>
 	</bean>
--->
+
 </beans>
