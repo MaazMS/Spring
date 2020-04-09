@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class DadController {  
 	
-	//@ResponseBody 
+	// It is access the file inside the  /WEB-INF/view/ by controller 
 	@RequestMapping("/cash")
 	public String getMoney() {
 		

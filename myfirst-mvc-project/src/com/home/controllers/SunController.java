@@ -2,10 +2,12 @@ package com.home.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class SunController {
-// Working of prefix and suffix
+// it is acces by home.com/Sun after the url and display string NewFile 
+	@ResponseBody
 	@RequestMapping("/Sun")
 	public String followTime() {
 		

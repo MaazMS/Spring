@@ -26,4 +26,4 @@
     <url-pattern>/home.com/*</url-pattern>
   </servlet-mapping>
 </web-app>
-<!-- this is error dad-frontcontroller name is not present -->
+<!-- /home.come/* is the URL for use frontcontroller to acces all controller inside the contoller It dispatcher call to controller -->
