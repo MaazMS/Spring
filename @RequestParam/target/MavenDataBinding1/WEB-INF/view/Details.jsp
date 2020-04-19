@@ -12,11 +12,11 @@
 <div align="center">
 <p> 
 	<label for="fn"> first name </label> <br>
-	<input type="text" id="fn" name="first-name">
+	<input type="text" id="fn" name="first_name">
 </p>
 <p> 
 	<label for="ln"> last name </label> <br>
-	<input type="text" id="ln" name="last-name">
+	<input type="text" id="ln" name="last_name">
 </p>
 <input type="submit" value="submit">
 

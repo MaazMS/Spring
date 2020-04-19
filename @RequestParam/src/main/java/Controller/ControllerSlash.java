@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ControllerSlash {
-	
+
 	@RequestMapping("/")
 	public String Mapping() {
-		
+
 		return "File";
 	}
 }

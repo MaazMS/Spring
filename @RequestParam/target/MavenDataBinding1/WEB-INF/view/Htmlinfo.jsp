@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-This file access after the html submit
+<h1> Myself </h1>
+<div align="center"> 
+	<p> First name : ${first-name} </p>
+	<p> Fast name : ${last-name} </p>
+</div>
 </body>
 </html>
