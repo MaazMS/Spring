@@ -1,0 +1,42 @@
+problem 1 : Delete web.xml error 
+Description	Resource	Path	Location	Type
+web.xml is missing and <failOnMissingWebXml> is set to true	pom.xml	/Webserver	line 6	Maven Java
+EE Configuration Problem 
+
+Solution 
+<properties>
+   <failOnMissingWebXml>false </failOnMissingWebXml>
+ </properties> 
+ 
+ project update error
+ Description	Resource	Path	Location	Type
+Cannot change version of project facet Dynamic Web Module to 4.0.	Webserver line 1	Maven Java
+EE Configuration Problem
+
+Solution  
+1.<maven.compiler.source>1.8</maven.compiler.source>
+2.<maven.compiler.target>1.8</maven.compiler.target> 
+
+Inside of <properties> </properties>  
+<properties>
+   <failOnMissingWebXml>false </failOnMissingWebXml>
+   <maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target> 
+ </properties>  
+ properties tag before <dependency>
+ 
+ 
+ Changes of xml file location .setting/org.eclipse.wst.common.project.facet.core 
+ <?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="Apache Tomcat v9.0"/>
+  <fixed facet="wst.jsdt.web"/>
+  <installed facet="java" version="1.8"/>
+  <installed facet="jst.web" version="4.0"/>
+  <installed facet="wst.jsdt.web" version="1.0"/>
+</faceted-project>
+ 
+ 
+ Change java version 
+ change jst.web version 4.0 if also give error then  version number is show in problems that version is use
+ 
