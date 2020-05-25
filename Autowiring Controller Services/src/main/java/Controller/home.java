@@ -4,10 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import entities.Project;
+
 @Controller
 public class home {  
 	
-	@RequestMapping("/project")
+	@RequestMapping("/")
 	public String frontpage(Model model) {
 	
 		
