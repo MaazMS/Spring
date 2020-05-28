@@ -1,23 +1,20 @@
-package entities;
+package com.infiniteskills.mvc.data.entities;
+
+import java.math.BigDecimal;
 
 public class Project { 
 	
-	private String projectid; 
+	private Long projectid; 
 	private String name; 
 	private String description; 
 	private String sponsor;
-	private String authorizedHours;
-	private String anthorizedFound; 
+	private BigDecimal authorizedHours;
+	private BigDecimal anthorizedFound; 
 	private String year; 
 	private String type; 
 	private boolean special;
-	public String getProjectid() {
-		return projectid;
-	}
-	public void setProjectid(String projectid) {
-		this.projectid = projectid;
-	}
-	public String getName() {
+	
+		public String getName() {
 		return name;
 	}
 	public void setName(String name) {
@@ -34,18 +31,6 @@ public class Project {
 	}
 	public void setSponsor(String sponsor) {
 		this.sponsor = sponsor;
-	}
-	public String getAuthorizedHours() {
-		return authorizedHours;
-	}
-	public void setAuthorizedHours(String authorizedHours) {
-		this.authorizedHours = authorizedHours;
-	}
-	public String getAnthorizedFound() {
-		return anthorizedFound;
-	}
-	public void setAnthorizedFound(String anthorizedFound) {
-		this.anthorizedFound = anthorizedFound;
 	}
 	public String getYear() {
 		return year;
@@ -64,5 +49,23 @@ public class Project {
 	}
 	public void setSpecial(boolean special) {
 		this.special = special;
+	}
+	public BigDecimal getAuthorizedHours() {
+		return authorizedHours;
+	}
+	public void setAuthorizedHours(BigDecimal authorizedHours) {
+		this.authorizedHours = authorizedHours;
+	}
+	public BigDecimal getAnthorizedFound() {
+		return anthorizedFound;
+	}
+	public void setAnthorizedFound(BigDecimal anthorizedFound) {
+		this.anthorizedFound = anthorizedFound;
+	}
+	public Long getProjectid() {
+		return projectid;
+	}
+	public void setProjectid(Long projectid) {
+		this.projectid = projectid;
 	}  
 }
